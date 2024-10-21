@@ -1,0 +1,183 @@
+body {
+    font-family: 'Verdana', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f3e6ff; /* Light purple background */
+    animation: backgroundFade 2s ease-in-out forwards; /* Background color fade-in animation */
+}
+
+/* Background Fade Animation */
+@keyframes backgroundFade {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: #f3e6ff; /* Light purple */
+    }
+}
+
+/* Form Styling */
+form {
+    margin: 60px auto;
+    background-color: #f9f0ff; /* Light purple background for the form */
+    border-radius: 12px; /* Rounded corners for a softer appearance */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    padding: 30px;
+    max-width: 700px;
+    animation: formSlideIn 1.5s ease-out forwards; /* Form slide-in animation */
+    opacity: 0; /* Start with hidden visibility */
+}
+
+/* Form Slide-In Animation */
+@keyframes formSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Start from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Main Heading Styling with Animation */
+h1 {
+    text-align: center;
+    color: #8e44ad; /* Dark purple color for the heading */
+    font-size: 32px;
+    animation: fadeInScale 1.5s ease-in-out forwards;
+    opacity: 0; /* Start with hidden visibility */
+}
+
+/* Heading Fade-In Animation */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* Start slightly smaller */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Scale to original size */
+    }
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #c39bd3; /* Light purple border */
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #f9f0ff; /* Very light purple */
+    animation: fadeInBackground 2s ease-in-out forwards;
+    opacity: 0; /* Start with hidden visibility */
+}
+
+/* Background Fade-In Animation */
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Legend Styling */
+legend {
+    font-weight: bold;
+    color: #8e44ad; /* Matching dark purple color */
+    font-size: 18px;
+    background-color: #f3e6ff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #c39bd3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-top: 15px;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Input and Textarea Styling */
+input, 
+textarea {
+    margin-top: 8px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #c39bd3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f0ff;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Focus State */
+input:focus,
+textarea:focus {
+    border-color: #8e44ad;
+    background-color: #f3e6ff;
+    box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    width: auto;
+    background-color: #9b59b6; /* Dark purple for the button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: buttonAppear 2s ease-in-out forwards 1s;
+    opacity: 0;
+}
+
+/* Button Appear Animation */
+@keyframes buttonAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #7d3c98;
+    transform: translateY(-4px);
+}
+
+/* Resume Display Styling */
+#resume-display {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 35px;
+    border: 1px solid #c39bd3;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInBackground 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Resume Heading Styling */
+#resume-display h2 {
+    color: #8e44ad;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
